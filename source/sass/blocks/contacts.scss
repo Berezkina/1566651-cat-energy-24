@@ -1,0 +1,40 @@
+.contacts {
+  color: $basic_black;
+  background-color: $basic_white;
+  //background-color: $basic_grey;
+}
+
+.contacts__container {
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__prompt {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}
+
+.contacts__location {
+}
+
+.contacts__map {
+  color: $basic_black;
+  background-color: $basic_grey;
+}

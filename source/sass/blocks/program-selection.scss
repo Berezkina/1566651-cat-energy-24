@@ -1,0 +1,82 @@
+.program-selection {
+  color: $basic_black;
+  background-color: $basic_white;
+}
+
+.program-selection__container {
+}
+
+.program-selection__text {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic_black;
+  text-transform: uppercase;
+}
+
+.program-selection__form {
+}
+
+.program-selection__fieldset {
+}
+
+.program-selection__field {
+}
+
+.program-selection__label,
+.program-selection__input {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.program-selection__input {
+  background-color: $basic_white;
+  border: 1px solid rgba(205, 205, 205, 1);
+}
+
+.program-selection__list {
+  list-style-type: none;
+}
+
+.program-selection__item {
+}
+
+.program-selection__legend {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic_black;
+}
+
+.program-selection__textarea {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+
+  border: 1px solid #e7e7e7;
+}
+
+.program-selection__send-request-button {
+}
+
+.program-selection__small {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $basic_black;
+}

@@ -1,0 +1,55 @@
+.programs {
+  color: $basic_black;
+  background-color: $basic_white;
+}
+
+.programs__container {
+}
+
+.programs__list {
+  list-style-type: none;
+}
+
+.programs__item {
+  margin-bottom: 20px;
+
+  background-color: $basic_grey;
+
+  //&__item--slim {}
+  //&__item--pro {}
+}
+
+.programs__item:last-child {
+  margin-bottom: 0;
+}
+
+.programs__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $basic_black;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}
+
+.programs__link {
+  display: block;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $basic_black;
+  text-transform: uppercase;
+}

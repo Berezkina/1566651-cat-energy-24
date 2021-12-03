@@ -1,0 +1,36 @@
+.result {
+  color: $basic_black;
+  background-color: $special_dark-grey;
+}
+
+.result__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}
+
+.result__list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+.result__item {
+}
+
+.result__food-costs {
+  display: block;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic_black;
+  text-transform: uppercase;
+  text-align: center;
+}
