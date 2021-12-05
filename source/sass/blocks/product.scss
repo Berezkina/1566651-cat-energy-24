@@ -1,0 +1,29 @@
+.product {
+  color: $basic_black;
+  background-color: $basic_white;
+}
+
+//.product__container {}
+
+.product__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.product__image {
+  color: $basic_black;
+
+  background-color: $basic_white;
+}
+
+//.product__info {}
+
+.product__buy {
+  display: block;
+
+  text-align: center;
+}

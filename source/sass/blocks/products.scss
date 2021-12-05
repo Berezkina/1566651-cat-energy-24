@@ -1,0 +1,44 @@
+.products {
+  color: $basic_black;
+  background-color: $basic_white;
+}
+
+//.products__container {}
+
+.products__image {
+  color: $basic_black;
+
+  background-color: $basic_white;
+}
+
+//.products__info {}
+
+.products__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-align: center;
+}
+
+.products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special_dark-grey;
+  text-align: center;
+}
+
+.products__show-more {
+  display: block;
+
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: $basic_grey;
+}

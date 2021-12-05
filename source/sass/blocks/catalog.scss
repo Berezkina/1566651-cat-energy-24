@@ -1,0 +1,21 @@
+.catalog {
+  color: $basic_black;
+  background-color: $basic_white;
+}
+
+//.catalog__container {}
+
+.catalog__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic_black;
+}
+
+.catalog_list {
+  list-style-type: none;
+}
+
+//.catalog__item {}

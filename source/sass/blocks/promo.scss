@@ -1,0 +1,33 @@
+.promo {
+  color: $basic_black;
+  background-color: $basic_white;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 70%, $basic_white 30%);
+}
+
+//.promo__container {}
+
+.promo__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic_white;
+  text-align: center;
+}
+
+.promo__slogan {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $basic_white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  color: $basic_black;
+  background-color: $basic_white;
+}

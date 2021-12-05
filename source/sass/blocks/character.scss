@@ -1,0 +1,19 @@
+//.character {}
+
+.character__value {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic_black;
+}
+
+.character__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}

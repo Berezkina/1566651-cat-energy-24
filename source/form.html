@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,13 +18,13 @@
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -32,7 +34,9 @@
     <h1 class="page-form__title">Подбор программы</h1>
     <section class="program-selection">
       <div class="program-selection__container">
-        <h2 class="program-selection__title">Форма заявки</h2>
+        <h2 class="visually-hidden">Форма заявки</h2>
+        <p class="program-selection__text">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="program-selection__fieldset">
             <legend class="visually-hidden">Сведения о коте</legend>
@@ -126,8 +130,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="program-selection__send-request-button" type="button">отправить заявку</button>
-          <small>* — Обязательные поля</small>
+          <button class="button program-selection__send-request-button" type="button">отправить заявку</button>
+          <small class="program-selection__small">* — Обязательные поля</small>
         </form>
       </div>
     </section>
@@ -141,7 +145,7 @@
         </div>
         <div class="contacts__location">
           <h3 class="visually-hidden">Расположение</h3>
-          <img src="" width="320" height="362" alt="Расположение на карте.">
+          <img class="contacts__map" src="" width="320" height="362" alt="Расположение на карте.">
         </div>
       </div>
     </section>

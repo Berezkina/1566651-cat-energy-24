@@ -1,0 +1,19 @@
+.social {
+  color: $basic_black;
+  background-color: $basic_grey;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+//.social__item {}
+
+.social__link {
+  //&__link--vkontakte {}
+  //&__link--instagram {}
+  //&__link--facebook {}
+}

@@ -1,0 +1,36 @@
+.specials {
+  color: $basic_black;
+  background-color: $basic_white;
+}
+
+//.specials__container {}
+
+.specials__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $basic_black;
+}
+
+.specials__list {
+  list-style-type: none;
+}
+
+.specials__item {
+  padding-bottom: 20px;
+}
+
+.specials__item:last-child {
+  padding-bottom: 0;
+}
+
+.specials__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}
