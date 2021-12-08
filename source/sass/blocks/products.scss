@@ -1,14 +1,15 @@
 .products {
-  color: $basic_black;
-  background-color: $basic_white;
+  color: $basic-black;
+
+  background-color: $basic-white;
 }
 
 //.products__container {}
 
 .products__image {
-  color: $basic_black;
+  color: $basic-black;
 
-  background-color: $basic_white;
+  background-color: $basic-white;
 }
 
 //.products__info {}
@@ -29,16 +30,16 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   text-align: center;
 }
 
 .products__show-more {
   display: block;
 
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   text-transform: uppercase;
   text-align: center;
 
-  background-color: $basic_grey;
+  background-color: $basic-grey;
 }

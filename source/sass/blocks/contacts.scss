@@ -1,14 +1,34 @@
 .contacts {
-  color: $basic_black;
-  background-color: $basic_white;
-  //background-color: $basic_grey;
+  color: $basic-black;
+
+  background-color: $basic-white;
 }
 
-//.contacts__container {}
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
 
 .contacts__address {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 565px;
+    height: 198px;
+    padding: 60px 80px 56px;
+  }
 }
 
 .contacts__prompt {
@@ -19,6 +39,11 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__text {
@@ -27,12 +52,29 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
-//.contacts__location {}
+.contacts__location {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
 
 .contacts__map {
-  color: $basic_black;
-  background-color: $basic_grey;
+  color: $basic-black;
+
+  background-color: $basic-grey;
 }
