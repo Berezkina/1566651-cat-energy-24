@@ -1,6 +1,7 @@
 .catalog {
-  color: $basic_black;
-  background-color: $basic_white;
+  color: $basic-black;
+
+  background-color: $basic-white;
 }
 
 //.catalog__container {}
@@ -11,10 +12,13 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $basic_black;
+  color: $basic-black;
 }
 
 .catalog_list {
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
 }
 

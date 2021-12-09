@@ -1,33 +1,122 @@
 .promo {
-  color: $basic_black;
-  background-color: $basic_white;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 70%, $basic_white 30%);
+  color: $basic-black;
+
+  background-color: $basic-white;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, $basic-white 40%), url("/source/img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 696px;
+    margin-bottom: 82px;
+
+    background-image: linear-gradient(to right, $basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("/source/img/index-background-desktop.jpg");
+    background-position: right, right;
+  }
 }
 
-//.promo__container {}
+.promo__container {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
 .promo__title {
+  margin-bottom: 25px;
+
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $basic_white;
+  color: $basic-white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 550px;
+    margin-bottom: 40px;
+    padding-left: 87px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 223px;
+    padding-left: 80px;
+  }
 }
 
 .promo__slogan {
+  margin-bottom: 29px;
+
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: $basic_white;
+  color: $basic-white;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    padding-left: 80px;
+  }
 }
 
 .promo__image {
-  color: $basic_black;
-  background-color: $basic_white;
+  display: block;
+
+  color: $basic-black;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
+    left: 448px;
+  }
+}
+
+.button-choose-program {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 260px;
+    left: 87px;
+
+    width: 244px;
+    height: 54px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+
+    margin-left: 80px;
+  }
 }

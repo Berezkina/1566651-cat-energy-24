@@ -1,6 +1,7 @@
 .product {
-  color: $basic_black;
-  background-color: $basic_white;
+  color: $basic-black;
+
+  background-color: $basic-white;
 }
 
 //.product__container {}
@@ -15,9 +16,9 @@
 }
 
 .product__image {
-  color: $basic_black;
+  color: $basic-black;
 
-  background-color: $basic_white;
+  background-color: $basic-white;
 }
 
 //.product__info {}

@@ -1,19 +1,25 @@
 .social {
-  color: $basic_black;
-  background-color: $basic_grey;
+  color: $basic-black;
+
+  background-color: $basic-grey;
 }
 
 .social__list {
-  display: flex;
-  justify-content: space-between;
+  width: 130px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
 
   list-style-type: none;
+
+  outline: 1px solid #123456;
+
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    height: 33px;
+  }
 }
 
 //.social__item {}
 
-.social__link {
-  //&__link--vkontakte {}
-  //&__link--instagram {}
-  //&__link--facebook {}
-}
+//.social__link {}

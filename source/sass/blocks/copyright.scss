@@ -1,6 +1,15 @@
 .copyright {
-  color: $basic_black;
-  background-color: $basic_white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: $basic-black;
+
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
 
 .copyright__link {
@@ -9,7 +18,12 @@
   font-size: 16px;
   line-height: 18.4px;
   font-weight: 400;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
 }
 
-//.copyright__logo-html {}
+.copyright__logo-html {
+  width: 27px;
+  height: 34px;
+
+  outline: 1px solid #123456;
+}
