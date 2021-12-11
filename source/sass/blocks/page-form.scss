@@ -5,10 +5,26 @@
 }
 
 .page-form__title {
+  margin-bottom: 37px;
+  padding-left: 20px;
+
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding-left: 40px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+    padding: 0;
+  }
 }

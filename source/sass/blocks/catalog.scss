@@ -4,22 +4,43 @@
   background-color: $basic-white;
 }
 
-//.catalog__container {}
+.catalog__container {
+  padding: 27px 0 25px;
+}
 
 .catalog__title {
+  margin-bottom: 41px;
+
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
-.catalog_list {
+.catalog__list {
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
+  }
 }
 
 //.catalog__item {}

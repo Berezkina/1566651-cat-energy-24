@@ -2,29 +2,47 @@
   color: $basic-black;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
 }
 
-//.product__container {}
+.product__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 39px;
+  }
+}
 
 .product__title {
+  margin-bottom: 14px;
+
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product__image {
-  color: $basic-black;
+  margin: 0 auto;
 
-  background-color: $basic-white;
+  color: $basic-black;
 }
+
+//.product__image-link {}
 
 //.product__info {}
 
 .product__buy {
-  display: block;
-
-  text-align: center;
+  width: 100%;
 }
