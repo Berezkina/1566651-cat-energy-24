@@ -29,6 +29,7 @@
   background-color: $basic-grey;
 
   //&__item--slim {}
+
   //&__item--pro {}
 
   @media (min-width: $tablet-width) {
@@ -86,13 +87,15 @@
     background-color: $basic-green;
     border-radius: 50%;
 
-    @media screen and (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
 
     @media (min-width: $desktop-width) {
       top: 47px;
       left: 52px;
+
+      display: block;
       width: 100px;
       height: 100px;
     }
@@ -104,8 +107,10 @@
       position: absolute;
       top: 92px;
       right: 62px;
+
       width: 200px;
       height: 200px;
+
       background-color: $basic-green;
       border-radius: 50%;
     }

@@ -14,11 +14,14 @@
     flex-direction: row;
   }
 
-  @media (min-width: $desktop-width) {
-    position: relative;
-    margin-bottom: -185px;
+  &--index {
+    @media (min-width: $desktop-width) {
+      position: relative;
+      margin-bottom: -185px;
+      z-index: 1;
 
-    background-color: transparent;
+      background-color: transparent;
+    }
   }
 }
 

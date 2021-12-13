@@ -1,5 +1,82 @@
-//.item {}
+.item {
+  padding: 13px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .item__info {
-  padding: 12px 0 19px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.item__title {
+  margin-bottom: 13px;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.item__description {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 218px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin-right: 38px;
+  }
+}
+
+.item__volume,
+.item__price {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $special-dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.item__buy {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
