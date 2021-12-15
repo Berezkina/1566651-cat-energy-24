@@ -2,20 +2,31 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  height: 40px;
+  min-height: 40px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 20px;
-  line-height: 20px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
   color: $basic-white;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 
-  background-color: $basic-green;
   border: none;
+  background-color: $basic-green;
 
   cursor: pointer;
+}
+
+.button--green {
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $basic-green-2;
+  }
 }

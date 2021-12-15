@@ -14,16 +14,29 @@
 
 .copyright__link {
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 18.4px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 18.4px;
   color: $special-dark-grey;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo-html {
   width: 27px;
   height: 34px;
 
-  outline: 1px solid #123456;
+  fill: $special-grey-2;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    fill: $basic-green;
+  }
 }

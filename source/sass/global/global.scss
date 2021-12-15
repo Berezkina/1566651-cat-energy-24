@@ -1,6 +1,7 @@
 $basic-white: #ffffff;
 $basic-black: #000000;
 $basic-green: #68b738;
+$basic-green-2: #5eaa2f;
 $basic-grey: #f2f2f2;
 $basic-grey-2: #eaeaea;
 $special-grey: #cdcdcd;
@@ -10,10 +11,10 @@ $special-dark-grey-2: #222222;
 
 $tablet-width: 768px;
 $desktop-width: 1440px;
-$mobile-width-only: 320px;
+$mobile-width-only: 767px;
 
-$mobile-width-container: 280px;
-$tablet-width-container: 708px;
+$mobile-width-container: 87%;   //280px;
+$tablet-width-container: 92.2%;   //708px;
 $desktop-width-container: 1220px;
 
 *,
