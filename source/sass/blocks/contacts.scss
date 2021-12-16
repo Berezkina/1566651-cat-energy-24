@@ -13,8 +13,9 @@
 .contacts__address {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   padding: 26px 0;
+
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 70px;
@@ -26,17 +27,17 @@
     left: 110px;
 
     width: 565px;
-    height: 198px;
+    min-height: 198px;
     padding: 60px 80px 56px;
   }
 }
 
 .contacts__prompt {
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
   color: #111111;
   text-transform: uppercase;
 
@@ -48,10 +49,10 @@
 
 .contacts__text {
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  line-height: 20px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
@@ -74,7 +75,11 @@
 }
 
 .contacts__map {
+  display: block;
+  height: 100%;
+
   color: $basic-black;
 
+  border: none;
   background-color: $basic-grey;
 }

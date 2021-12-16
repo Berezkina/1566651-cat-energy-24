@@ -1,16 +1,18 @@
 .range {
   display: flex;
-  justify-content: space-between;
+  width: 65%;
 }
 
 .range__text {
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
 }
 
-//.range__input {}
+.range__input {
+  flex-grow: 1;
+}

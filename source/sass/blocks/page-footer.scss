@@ -7,13 +7,11 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
-
   min-height: 236px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-
     min-height: 147px;
   }
 
@@ -23,13 +21,21 @@
 }
 
 .page-footer__logo {
+  display: block;
   align-self: center;
-
   width: 128px;
   height: 24px;
   margin: 39px 0 32px;
 
-  outline: 1px solid #123456;
+  fill: #111111;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -38,7 +44,6 @@
 
 .page-footer__social {
   align-self: center;
-
   margin: 20px 0 21px;
 
   @media (min-width: $tablet-width) {

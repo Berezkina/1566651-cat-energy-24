@@ -20,14 +20,15 @@
   margin-bottom: 40px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 36px;
-  line-height: 40px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -36,7 +37,6 @@
 .specials__list {
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -60,9 +60,33 @@
   margin-bottom: 20px;
   padding-left: 80px;
 
+  &--one {
+    &::before {
+      background-image: url("/source/img/icon_leaf.png");
+    }
+  }
+
+  &--two {
+    &::before {
+      background-image: url("/source/img/icon_tub.png");
+    }
+  }
+
+  &--three {
+    &::before {
+      background-image: url("/source/img/icon_eat.png");
+    }
+  }
+
+  &--four {
+    &::before {
+      background-image: url("/source/img/icon_alarm.png");
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    min-width: 245px;
     min-height: 280px;
-    max-width: 245px;
     margin: 0;
     padding: 0;
     padding-top: 151px;
@@ -93,13 +117,18 @@
   }
 
   &::before {
-    position: absolute;
     content: "";
+
+    position: absolute;
     top: 0;
     left: 0;
+
     width: 60px;
     height: 60px;
+
     background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 
     @media (min-width: $tablet-width) {
       top: 40px;
@@ -116,10 +145,10 @@
 
 .specials__description {
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
