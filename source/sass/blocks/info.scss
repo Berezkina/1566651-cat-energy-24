@@ -5,11 +5,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     flex-grow: 1;
-
+    justify-content: space-between;
     margin-bottom: 25px;
   }
 }
@@ -18,10 +17,10 @@
   margin-bottom: 13px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 16px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
   color: $special-dark-grey-2;
   text-transform: uppercase;
 
@@ -36,7 +35,6 @@
 .info__list {
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -47,15 +45,20 @@
 .info__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey;
+  }
 }
 
 .info__charact,
 .info__value {
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  line-height: 16px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {

@@ -1,27 +1,36 @@
 .item {
   padding: 13px 0 19px;
 
+  border-top: 1px solid $special-grey;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-
-    padding: 25px 0;
+    padding: 25px 37px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    padding: 15px 0 17px;
   }
+}
+
+.item:last-child {
+  border-bottom: 1px solid $special-grey;
 }
 
 .item__info {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    margin: 0;
   }
 }
 
@@ -29,10 +38,10 @@
   margin-bottom: 13px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 16px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
   color: $special-dark-grey-2;
   text-transform: uppercase;
 
@@ -47,9 +56,11 @@
 .item__description {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     width: 218px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,10 +72,10 @@
 .item__volume,
 .item__price {
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  line-height: 14px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
   color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {

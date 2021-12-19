@@ -2,6 +2,10 @@
   color: $basic-black;
 
   background-color: $basic-white;
+
+  &--inner {
+    background-color: $basic-grey;
+  }
 }
 
 .contacts__container {
@@ -15,7 +19,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 26px 0;
 
-  background-color: $basic-white;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 70px;
@@ -76,6 +80,7 @@
 
 .contacts__map {
   display: block;
+  width: 100%;
   height: 100%;
 
   color: $basic-black;

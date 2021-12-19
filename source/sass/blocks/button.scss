@@ -30,3 +30,15 @@
     background-color: $basic-green-2;
   }
 }
+
+.button--grey {
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+
+    background-color: #ebebeb;
+  }
+}

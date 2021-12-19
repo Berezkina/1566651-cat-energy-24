@@ -5,7 +5,24 @@
 }
 
 .program-selection__container {
-  padding: 27px 0 32px;
+  padding: 27px 0;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: -9%;
+      left: -9%;
+
+      height: 1px;
+
+      background-color: #d9d9d9;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 25px 40px;
@@ -16,15 +33,15 @@
   margin-bottom: 39px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
   color: $basic-black;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 50px;
 
     font-size: 20px;
     line-height: 30px;
@@ -41,6 +58,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0 80px;
+      margin-bottom: 69px;
     }
   }
 
@@ -60,15 +78,55 @@
 .program-selection__list {
   display: flex;
   flex-direction: column;
-
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 
+  &--cat-data {
+    padding: 25px 0;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
   &--program {
+    padding: 20px 0;
+
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        right: -9%;
+        left: -9%;
+
+        width: 110vw;
+        height: 1px;
+
+        background-color: #d9d9d9;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: -9%;
+        bottom: 0;
+        left: -9%;
+
+        height: 1px;
+
+        background-color: #d9d9d9;
+      }
+    }
+
     @media (min-width: $tablet-width) {
-      padding: 30px;
+      padding: 25px 28px;
+
       border: 1px solid #e7e7e7;
     }
   }
@@ -96,9 +154,37 @@
 }
 
 .program-selection__item {
-  display: flex;
+  position: relative;
 
+  display: flex;
+  align-items: center;
+}
+
+.program-selection__list--cat-data .program-selection__item,
+.program-selection__list--contacts .program-selection__item {
+  min-height: 45px;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+    margin-bottom: 20px;
+  }
+}
+
+.program-selection__list--contacts .program-selection__item {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.program-selection__list--program .program-selection__item,
+.program-selection__list--optional .program-selection__item {
+  min-height: 30px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+  }
 }
 
 .program-selection__item:last-child {
@@ -108,42 +194,139 @@
 .program-selection__label,
 .program-selection__input {
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
 }
 
 .program-selection__label {
   margin-right: 8px;
-
-  white-space: nowrap;
 }
 
 .program-selection__input {
   flex-grow: 1;
 
+  padding: 14px 50px 14px 15px;
+
+  border: 1px solid #e7e7e7;
   background-color: $basic-white;
-  border: 1px solid rgba(205, 205, 205, 1);
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+    outline: none;
+  }
+}
+
+.program-selection__list--cat-data .program-selection__input {
+  padding: 14px 15px;
+}
+
+input[type="number"] {
+  width: 100%;
+
+  appearance: textfield;
+}
+
+.program-selection__icon {
+  position: absolute;
+  right: 17px;
+}
+
+.program-selection__icon--email {
+  stroke: #222222;
+}
+
+.program-selection__icon--phone {
+  fill: #000000;
+}
+
+.program-selection__input:focus + .program-selection__icon--email {
+  stroke: $basic-green;
+}
+
+.program-selection__input:focus + .program-selection__icon--phone {
+  fill: $basic-green;
+}
+
+.program-selection__input--error + .program-selection__icon--email {
+  stroke: #ff8282;
+}
+
+.program-selection__input--error + .program-selection__icon--phone {
+  fill: #ff8282;
 }
 
 .program-selection__legend {
+  position: relative;
+
   margin-bottom: 35px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 24px;
-  line-height: 26px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 57px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &::before {
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 15px;
+
+      width: 100vw;
+      height: 2px;
+      margin-left: -40px;
+
+      background-color: $basic-green;
+
+      transform: translateX(-100%);
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+
+    width: 100vw;
+    height: 2px;
+    margin-left: 23px;
+
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+    }
+  }
+}
+
+.program-selection__fieldset--contacts .program-selection__legend {
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -153,10 +336,10 @@
   padding: 9px 12px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
 
@@ -167,8 +350,8 @@
 
 .program-selection__send-request {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -193,10 +376,10 @@
 
 .program-selection__small {
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  line-height: 16px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
