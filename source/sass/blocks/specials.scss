@@ -62,25 +62,25 @@
 
   &--one {
     &::before {
-      background-image: url("/source/img/icon_leaf.png");
+      background-image: url("../img/icon_leaf.png");
     }
   }
 
   &--two {
     &::before {
-      background-image: url("/source/img/icon_tub.png");
+      background-image: url("../img/icon_tub.png");
     }
   }
 
   &--three {
     &::before {
-      background-image: url("/source/img/icon_eat.png");
+      background-image: url("../img/icon_eat.png");
     }
   }
 
   &--four {
     &::before {
-      background-image: url("/source/img/icon_alarm.png");
+      background-image: url("../img/icon_alarm.png");
     }
   }
 
@@ -92,25 +92,25 @@
     padding-top: 151px;
 
     &--one {
-      background-image: url("/source/img/1.png");
+      background-image: url("../img/1.png");
       background-repeat: no-repeat;
       background-position: 118px 20px;
     }
 
     &--two {
-      background-image: url("/source/img/2.png");
+      background-image: url("../img/2.png");
       background-repeat: no-repeat;
       background-position: 118px 20px;
     }
 
     &--three {
-      background-image: url("/source/img/3.png");
+      background-image: url("../img/3.png");
       background-repeat: no-repeat;
       background-position: 118px 20px;
     }
 
     &--four {
-      background-image: url("/source/img/4.png");
+      background-image: url("../img/4.png");
       background-repeat: no-repeat;
       background-position: 118px 20px;
     }
