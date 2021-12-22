@@ -112,7 +112,7 @@
     width: 36px;
     height: 50px;
 
-    background-image: url("/source/img/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -142,7 +142,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url("/source/img/cat-pro.svg");
+    background-image: url("../img/cat-pro.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -219,7 +219,7 @@
       width: 140px;
       height: 194px;
 
-      background-image: url("/source/img/cat-slim.svg");
+      background-image: url("../img/cat-slim.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -243,7 +243,7 @@
       width: 268px;
       height: 112px;
 
-      background-image: url("/source/img/cat-pro.svg");
+      background-image: url("../img/cat-pro.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -289,13 +289,13 @@
     width: 32px;
     height: 10px;
 
-    background-image: url("/source/img/icon_arrow.svg");
+    background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
   }
 
   &:hover {
     &::after {
-      background-image: url("/source/img/icon_arrow_long.svg");
+      background-image: url("../img/icon_arrow_long.svg");
     }
   }
 
@@ -317,13 +317,13 @@
     width: 32px;
     height: 10px;
 
-    background-image: url("/source/img/icon_arrow.svg");
+    background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
   }
 
   &:hover {
     &::after {
-      background-image: url("/source/img/icon_arrow_long.svg");
+      background-image: url("../img/icon_arrow_long.svg");
     }
   }
 

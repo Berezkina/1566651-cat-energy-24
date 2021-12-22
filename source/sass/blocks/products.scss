@@ -7,19 +7,16 @@
 .products__container {
   position: relative;
 
-  padding: 78px 0 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 160px 37px 37px;
-  }
-}
-
-.product__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 78px 0 25px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 431px;
+    padding: 160px 37px 37px;
+
+    border: 2px solid $basic-grey;
   }
 }
 
@@ -27,10 +24,10 @@
   margin-bottom: 8px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
   color: #111111;
   text-align: center;
 
@@ -40,25 +37,45 @@
 
   &::before {
     content: "";
+
     position: absolute;
     top: 25px;
-    left: 125px;
+    left: 50%;
 
     width: 30px;
-    height: 30px;
-    outline: 1px solid #123456;
+    height: 2px;
+    margin-left: -15px;
+
+    background-color: #d3d3d3;
 
     @media (min-width: $tablet-width) {
       top: 52px;
-      left: 132px;
 
       width: 60px;
-      height: 60px;
+      margin-left: -30px;
     }
+  }
 
-    @media (min-width: $desktop-width) {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: 50%;
+
+    width: 30px;
+    height: 2px;
+    margin-left: -15px;
+
+    background-color: #d3d3d3;
+
+    transform: rotate(90deg);
+
+    @media (min-width: $tablet-width) {
       top: 52px;
-      left: 92px;
+
+      width: 60px;
+      margin-left: -30px;
     }
   }
 
@@ -72,15 +89,16 @@
   margin-bottom: 21px;
 
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 12px;
-  line-height: 16px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
   color: $special-dark-grey;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 87px;
+
     font-size: 16px;
     line-height: 18px;
   }
