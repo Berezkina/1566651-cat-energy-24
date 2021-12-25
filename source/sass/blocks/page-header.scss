@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 10px 0 18px;
+  padding: 10px 0 13px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 0 30px;
@@ -45,8 +45,6 @@
 
 .page-header__logo {
   display: block;
-  width: 191px;
-  height: 37px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -73,7 +71,7 @@
   position: relative;
 
   width: 24px;
-  height: 16.5px;
+  height: 17.5px;
 
   background-color: inherit;
 
@@ -94,7 +92,7 @@
     height: 1.5px;
 
     background-color: $basic-black;
-    box-shadow: 0 6.5px 0 0 $basic-black, 0 13px 0 0 $basic-black;
+    box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
   }
 }
 

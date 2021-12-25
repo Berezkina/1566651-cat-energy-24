@@ -1,9 +1,26 @@
 //.slider {}
 
 .slider__photo {
+  margin-bottom: 15px;
+
   text-align: center;
 }
 
+.slider__photo img {
+  @media (min-width: $tablet-width) {
+    width: 592px;
+    height: 511px;
+  }
+}
+
 .slider__range {
-  margin: 0 auto;
+  margin: 0 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
