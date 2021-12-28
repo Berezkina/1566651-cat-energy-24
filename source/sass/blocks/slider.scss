@@ -3,24 +3,153 @@
 .slider__photo {
   margin-bottom: 15px;
 
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
-.slider__photo img {
+.slider__photo-before {
+  display: block;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 592px;
     height: 511px;
   }
 }
 
+//.slider__photo-after {}
+
 .slider__range {
-  margin: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  margin: 0 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 66px;
+    min-height: 40px;
+    margin: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 15px;
+    margin-right: 5px;
+  }
+}
+
+.slider__range-text {
+  position: relative;
+
+  display: block;
+  width: 50px;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  }
+}
+
+.slider__progressbar {
+  position: relative;
+
+  width: 100%;
+  height: 14px;
+  margin-left: 22px;
+  margin-right: 15px;
+
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    padding: 0;
+
+    border: none;
+    background-color: #dcdcdc;
+  }
+}
+
+.slider__track {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+
+  width: 50%;
+  height: 6px;
+
+  border-radius: 6px;
+  background-color: $basic-green;
+
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__thumb {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+    background-color: $basic-white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background-color: $basic-green;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    }
   }
 }

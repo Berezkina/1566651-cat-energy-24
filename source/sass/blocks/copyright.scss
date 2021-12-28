@@ -1,7 +1,6 @@
 .copyright {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  padding: 22px 0;
 
   color: $basic-black;
 
@@ -9,34 +8,27 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
+    padding: 0;
   }
 }
 
 .copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 18.4px;
   color: $special-dark-grey;
-
-  &:focus {
-    opacity: 0.3;
-  }
 }
 
-.copyright__logo-html {
-  width: 27px;
-  height: 34px;
+.copyright__link:hover > .copyright__icon-logo-html {
+  fill: $basic-green;
+}
 
-  fill: $special-grey-2;
-
-  &:hover {
-    fill: $basic-green;
-  }
-
-  &:focus {
-    opacity: 0.3;
-    fill: $basic-green;
-  }
+.copyright__link:active {
+  opacity: 0.3;
 }
