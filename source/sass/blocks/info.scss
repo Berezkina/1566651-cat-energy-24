@@ -1,16 +1,5 @@
 .info {
-  margin-bottom: 15px;
-
   color: $basic-black;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  }
 }
 
 .info__title {
@@ -45,9 +34,12 @@
 .info__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+    padding-bottom: 9px;
+
     border-bottom: 1px solid $special-grey;
   }
 }
@@ -55,14 +47,14 @@
 .info__charact,
 .info__value {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
-  line-height: 16px;
+  line-height: 12px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
   }
 }

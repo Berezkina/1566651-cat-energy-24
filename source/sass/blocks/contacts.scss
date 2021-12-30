@@ -22,17 +22,18 @@
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 70px;
+    padding: 59px 40px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
 
+    grid-gap: 0 94px;
     width: 565px;
     min-height: 198px;
-    padding: 60px 80px 56px;
+    padding: 59px 80px;
   }
 }
 
@@ -65,8 +66,15 @@
     text-align: right;
   }
 
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__city {
   @media (min-width: $tablet-width) {
-    text-align: right;
+    display: block;
+    padding-top: 20px;
   }
 }
 

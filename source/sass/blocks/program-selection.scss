@@ -5,7 +5,7 @@
 }
 
 .program-selection__container {
-  padding: 27px 0;
+  padding: 27px 0 32px;
 
   @media (max-width: $mobile-width-only) {
     position: relative;
@@ -25,7 +25,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 40px;
+    padding: 30px 40px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 0 82px;
   }
 }
 
@@ -41,7 +45,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 66px;
 
     font-size: 20px;
     line-height: 30px;
@@ -54,6 +58,10 @@
   &--program {
     margin-bottom: 26px;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+    }
+
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -64,34 +72,56 @@
 
   &--contacts {
     margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
   }
 
   &--comment {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 65px;
+    }
   }
 
   &--optional {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
   }
 }
 
 .program-selection__list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   &--cat-data {
-    padding: 25px 0;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
 
     @media (min-width: $desktop-width) {
-      padding: 0;
+      margin: 0;
     }
   }
 
   &--program {
-    padding: 20px 0;
+    padding: 22px 0 20px;
 
     @media (max-width: $mobile-width-only) {
       position: relative;
@@ -104,7 +134,6 @@
         right: -9%;
         left: -9%;
 
-        width: 110vw;
         height: 1px;
 
         background-color: #d9d9d9;
@@ -125,7 +154,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 25px 28px;
+      padding: 24px 28px;
 
       border: 1px solid #e7e7e7;
     }
@@ -135,7 +164,7 @@
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 0 80px;
+      grid-gap: 20px 80px;
     }
   }
 
@@ -143,7 +172,8 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 0 60px;
+      grid-template-rows: minmax(40px, min-content);
+      grid-gap: 32px 60px;
     }
 
     @media (min-width: $desktop-width) {
@@ -154,36 +184,53 @@
 }
 
 .program-selection__item {
-  position: relative;
+  &--cat-data {
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    margin-bottom: 13px;
 
-  display: flex;
-  align-items: center;
-}
-
-.program-selection__list--cat-data .program-selection__item,
-.program-selection__list--contacts .program-selection__item {
-  min-height: 45px;
-  margin-bottom: 14px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 52px;
-    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      min-height: 52px;
+      margin-bottom: 20px;
+    }
   }
-}
 
-.program-selection__list--contacts .program-selection__item {
-  @media (min-width: $desktop-width) {
-    margin: 0;
+  &--program {
+    min-height: 30px;
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 40px;
+    }
   }
-}
 
-.program-selection__list--program .program-selection__item,
-.program-selection__list--optional .program-selection__item {
-  min-height: 30px;
-  margin-bottom: 13px;
+  &--contacts {
+    position: relative;
 
-  @media (min-width: $tablet-width) {
-    min-height: 40px;
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 52px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+
+  &--optional {
+    min-height: 30px;
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 40px;
+      margin: 0;
+    }
   }
 }
 
@@ -200,16 +247,24 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-selection__label {
-  margin-right: 8px;
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+  }
 }
 
 .program-selection__input {
   flex-grow: 1;
-
-  padding: 14px 50px 14px 15px;
+  padding: 13px 15px;
 
   border: 1px solid #e7e7e7;
   background-color: $basic-white;
@@ -230,42 +285,69 @@
 }
 
 .program-selection__list--cat-data .program-selection__input {
-  padding: 14px 15px;
+  @media (min-width: $tablet-width) {
+    padding: 10px 18px;
+  }
 }
 
-input[type="number"] {
-  width: 100%;
+.program-selection__list--contacts .program-selection__input {
+  padding: 12px 50px 13px 15px;
 
-  appearance: textfield;
+  @media (min-width: $tablet-width) {
+    padding: 10px 50px 10px 21px;
+  }
 }
 
 .program-selection__icon {
   position: absolute;
-  right: 17px;
+
+  &--email {
+    right: 23px;
+
+    stroke: #222222;
+
+    @media (min-width: $tablet-width) {
+      right: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 18px;
+    }
+  }
+
+  &--phone {
+    right: 20px;
+
+    fill: #000000;
+
+    @media (min-width: $tablet-width) {
+      right: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 18px;
+    }
+  }
 }
 
-.program-selection__icon--email {
-  stroke: #222222;
+.program-selection__input:focus + .program-selection__icon {
+  &--email {
+    stroke: $basic-green;
+  }
+
+  &--phone {
+    fill: $basic-green;
+  }
 }
 
-.program-selection__icon--phone {
-  fill: #000000;
-}
+.program-selection__input--error + .program-selection__icon {
+  &--email {
+    stroke: #ff8282;
+  }
 
-.program-selection__input:focus + .program-selection__icon--email {
-  stroke: $basic-green;
-}
-
-.program-selection__input:focus + .program-selection__icon--phone {
-  fill: $basic-green;
-}
-
-.program-selection__input--error + .program-selection__icon--email {
-  stroke: #ff8282;
-}
-
-.program-selection__input--error + .program-selection__icon--phone {
-  fill: #ff8282;
+  &--phone {
+    fill: #ff8282;
+  }
 }
 
 .program-selection__legend {
@@ -281,7 +363,7 @@ input[type="number"] {
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 76px;
 
     font-size: 36px;
     line-height: 36px;
@@ -292,9 +374,10 @@ input[type="number"] {
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: 15px;
+      top: 22px;
+      left: 0;
+      right: 0;
 
-      width: 100vw;
       height: 2px;
       margin-left: -40px;
 
@@ -317,22 +400,22 @@ input[type="number"] {
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
+      top: 22px;
+
       margin-left: 40px;
     }
   }
 }
 
-.program-selection__fieldset--contacts .program-selection__legend {
-  &::after {
-    @media (max-width: $mobile-width-only) {
-      margin-left: 50px;
-    }
+.program-selection__fieldset--optional .program-selection__legend {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
   }
 }
 
 .program-selection__textarea {
   width: 100%;
-  min-height: 150px;
+  height: 150px;
   padding: 9px 12px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -346,6 +429,14 @@ input[type="number"] {
   border: 1px solid #e7e7e7;
 
   resize: vertical;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 10px 19px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-selection__send-request {
@@ -359,7 +450,7 @@ input[type="number"] {
     grid-gap: 0 60px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 80px;
   }
@@ -369,8 +460,15 @@ input[type="number"] {
   width: 100%;
   margin-bottom: 21px;
 
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
+    min-height: 52px;
     margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

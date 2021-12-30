@@ -8,7 +8,7 @@
   padding: 25px 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 68px 0 69px;
+    padding: 26px 0 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,11 +16,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content, min-content;
     grid-gap: 0 80px;
-    padding: 75px 0 86px;
+    padding: 34px 0 86px;
   }
 }
 
 .product-more__title {
+  position: relative;
+
   margin-bottom: 36px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -29,6 +31,46 @@
   font-style: normal;
   line-height: 24px;
   color: $basic-black;
+
+  &::before {
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 22px;
+      left: 0;
+      right: 0;
+
+      height: 2px;
+
+      background-color: $basic-green;
+
+      transform: translateX(-100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -40px;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+
+    width: 100vw;
+    height: 2px;
+    margin-left: 23px;
+
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+
+      margin-left: 40px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -46,11 +88,11 @@
 
 .product-more__list {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    //padding: 0 37px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {

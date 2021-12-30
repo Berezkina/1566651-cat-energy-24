@@ -1,11 +1,9 @@
-.character {
-  padding-top: 13px;
-
-  // position: relative;
-}
+//.character {}
 
 .character__value {
   display: block;
+  padding-top: 14px;
+  padding-bottom: 17px;
 
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-size: 24px;
@@ -15,6 +13,9 @@
   color: $basic-black;
   text-align: center;
 
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -23,7 +24,7 @@
 
 .character__text {
   position: relative;
-  top: 10px;
+  bottom: 10px;
 
   width: 87px;
   margin: 0 auto;
@@ -40,7 +41,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    top: 15px;
+    bottom: 8px;
 
     box-sizing: content-box;
     width: 128px;
