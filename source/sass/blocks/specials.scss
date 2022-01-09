@@ -55,6 +55,7 @@
 
 .specials__item {
   position: relative;
+  z-index: 0;
 
   min-height: 60px;
   margin-bottom: 20px;
@@ -62,25 +63,25 @@
 
   &--one {
     &::before {
-      background-image: url("../img/icon_leaf.png");
+      background-image: url("../img/icon_leaf.svg");
     }
   }
 
   &--two {
     &::before {
-      background-image: url("../img/icon_tub.png");
+      background-image: url("../img/icon_tub.svg");
     }
   }
 
   &--three {
     &::before {
-      background-image: url("../img/icon_eat.png");
+      background-image: url("../img/icon_eat.svg");
     }
   }
 
   &--four {
     &::before {
-      background-image: url("../img/icon_alarm.png");
+      background-image: url("../img/icon_alarm.svg");
     }
   }
 
@@ -93,27 +94,75 @@
     padding-right: 79px;
 
     &--one {
-      background-image: url("../img/1.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
+      &::after {
+        content: "1";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 117px;
+
+        font-family: "OswaldRegular", "Arial", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+
+        color: $basic-grey;
+      }
     }
 
     &--two {
-      background-image: url("../img/2.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
+      &::after {
+        content: "2";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 112px;
+
+        font-family: "OswaldRegular", "Arial", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+
+        color: $basic-grey;
+      }
     }
 
     &--three {
-      background-image: url("../img/3.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
+      &::after {
+        content: "3";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 112px;
+
+        font-family: "OswaldRegular", "Arial", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+
+        color: $basic-grey;
+      }
     }
 
     &--four {
-      background-image: url("../img/4.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
+      &::after {
+        content: "4";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 112px;
+
+        font-family: "OswaldRegular", "Arial", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+
+        color: $basic-grey;
+      }
     }
   }
 

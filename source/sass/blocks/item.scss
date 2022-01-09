@@ -59,6 +59,7 @@
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     margin: 0;
+    margin-right: 18px;
   }
 }
 
@@ -98,7 +99,6 @@
     grid-template-columns: 234px 64px;
     justify-items: start;
     width: 308px;
-    margin-right: 18px;
   }
 }
 
@@ -120,6 +120,12 @@
 .item__volume {
   @media (min-width: $desktop-width) {
     justify-self: start;
+  }
+}
+
+.item__price {
+  @media (min-width: $desktop-width) {
+    word-break: break-all;
   }
 }
 

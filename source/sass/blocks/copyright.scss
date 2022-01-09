@@ -15,6 +15,7 @@
 .copyright__link {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   font-family: "Arial", sans-serif;
@@ -23,12 +24,24 @@
   font-style: normal;
   line-height: 18.4px;
   color: $special-dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $basic-green-2;
+    outline-offset: 2px;
+  }
 }
 
-.copyright__link:hover > .copyright__icon-logo-html {
+.copyright__logo-html {
+  width: 27px;
+  height: 34px;
+
+  fill: $special-grey-2;
+}
+
+.copyright__link:hover > .copyright__logo-html {
   fill: $basic-green;
-}
-
-.copyright__link:active {
-  opacity: 0.3;
 }
