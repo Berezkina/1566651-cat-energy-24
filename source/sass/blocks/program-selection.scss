@@ -255,7 +255,7 @@
 }
 
 .program-selection__label {
-  margin-right: 12px;
+  margin-right: 10px;
 
   @media (min-width: $tablet-width) {
     margin-right: 15px;
@@ -264,6 +264,7 @@
 
 .program-selection__input {
   flex-grow: 1;
+  width: 100%;
   padding: 13px 15px;
 
   border: 1px solid #e7e7e7;
@@ -284,6 +285,17 @@
   }
 }
 
+input[type="number"] {
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+
+  appearance: none;
+}
+
 .program-selection__list--cat-data .program-selection__input {
   @media (min-width: $tablet-width) {
     padding: 10px 18px;
@@ -300,10 +312,12 @@
 
 .program-selection__icon {
   position: absolute;
+  z-index: 1;
 
   &--email {
-    right: 23px;
+    right: 16px;
 
+    fill: none;
     stroke: #222222;
 
     @media (min-width: $tablet-width) {
@@ -316,7 +330,7 @@
   }
 
   &--phone {
-    right: 20px;
+    right: 13px;
 
     fill: #000000;
 
@@ -375,15 +389,19 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       top: 22px;
-      left: 0;
-      right: 0;
+      left: -37px;
 
+      display: block;
+      width: 100vw;
       height: 2px;
-      margin-left: -40px;
 
       background-color: $basic-green;
 
       transform: translateX(-100%);
+
+      @media (min-width: $tablet-width) {
+        left: -40px;
+      }
     }
   }
 
@@ -391,20 +409,27 @@
     content: "";
 
     position: absolute;
-    top: 15px;
+    top: 16px;
+    right: -25px;
 
+    display: block;
     width: 100vw;
     height: 2px;
-    margin-left: 23px;
 
     background-color: $basic-green;
 
+    transform: translateX(100%);
+
     @media (min-width: $tablet-width) {
       top: 22px;
-
-      margin-left: 40px;
+      right: -40px;
     }
   }
+}
+
+.program-selection__fieldset--contacts .program-selection__legend {
+  min-width: 187px;
+  margin-right: 93px;
 }
 
 .program-selection__fieldset--optional .program-selection__legend {
@@ -428,7 +453,7 @@
 
   border: 1px solid #e7e7e7;
 
-  resize: vertical;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     height: 174px;

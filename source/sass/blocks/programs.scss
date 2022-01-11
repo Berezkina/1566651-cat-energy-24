@@ -287,6 +287,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    outline: 2px solid $basic-green-2;
+    outline-offset: 2px;
+  }
 }
 
 .programs__item--slim .programs__link {

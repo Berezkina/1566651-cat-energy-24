@@ -19,6 +19,7 @@
 
 .social__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 130px;
   height: 22px;
@@ -40,17 +41,26 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    outline: 2px solid $basic-green;
+    outline-offset: 2px;
+  }
 }
 
 .social__icons {
+  display: inline-block;
+
+  vertical-align: middle;
+
   &--vkontakte {
     width: 23px;
-    height: 22px;
+    height: 16px;
   }
 
   &--instagram {
     width: 16px;
-    height: 22px;
+    height: 16px;
   }
 
   &--facebook {
@@ -61,12 +71,12 @@
   @media (min-width: $tablet-width) {
     &--vkontakte {
       width: 30px;
-      height: 33px;
+      height: 22px;
     }
 
     &--instagram {
       width: 23px;
-      height: 33px;
+      height: 23px;
     }
 
     &--facebook {

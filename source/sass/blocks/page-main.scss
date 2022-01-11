@@ -1,7 +1,9 @@
 .page-main {
+  position: relative;
+
+  flex-grow: 1;
+
   color: $basic-black;
 
   background-color: $basic-white;
-
-  position: relative;
 }

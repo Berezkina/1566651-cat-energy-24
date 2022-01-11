@@ -11,6 +11,10 @@
     padding-left: 60px;
   }
 
+  &:focus-visible {
+    outline: 2px solid $special-grey-2;
+  }
+
   cursor: pointer;
 }
 
@@ -48,7 +52,7 @@
   width: 26px;
   height: 26px;
 
-  background-image: url("../img/catalog/tick.svg");
+  background-image: url("../img/form/icon_tick.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -118,4 +122,9 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.control-input[type="radio"]:focus-visible + .control-mark,
+.control-input[type="checkbox"]:focus-visible + .control-mark {
+  outline: 2px solid $basic-green-2;
 }

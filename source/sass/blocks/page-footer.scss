@@ -38,8 +38,13 @@
     opacity: 0.8;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $basic-green-2;
+    outline-offset: 2px;
   }
 }
 
