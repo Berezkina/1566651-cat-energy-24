@@ -57,10 +57,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 10px;
     margin-bottom: 24px;
 
     line-height: 21px;
   }
+}
+
+.product__title a {
+  color: inherit;
 }
 
 .product__image-link {

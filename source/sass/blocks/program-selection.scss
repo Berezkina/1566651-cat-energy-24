@@ -255,10 +255,24 @@
 }
 
 .program-selection__label {
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
+}
+
+.program-selection__item--contacts .program-selection__label {
   margin-right: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 15px;
+    margin-right: 18px;
+  }
+}
+
+.program-selection__label[for="tel"] {
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
   }
 }
 
@@ -306,7 +320,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 12px 50px 13px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 50px 10px 21px;
+    padding: 10px 50px 10px 20px;
   }
 }
 

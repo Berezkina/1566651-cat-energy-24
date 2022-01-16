@@ -3,7 +3,17 @@
 
   background-color: $basic-white;
 
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    right: 0;
+    left: 0;
+  }
+
   @media (min-width: $tablet-width) {
+    position: static;
+
     margin-left: auto;
   }
 
@@ -14,8 +24,14 @@
   }
 }
 
-.main-nav--closed {
-  @media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
+  .main-nav--nojs {
+    position: static;
+
+    display: block;
+  }
+
+  .main-nav--closed {
     display: none;
   }
 }
@@ -121,6 +137,7 @@
     padding-top: 17px;
     padding-bottom: 10px;
 
+    font-family: "OswaldRegular", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;

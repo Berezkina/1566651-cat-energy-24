@@ -8,7 +8,7 @@
   padding: 25px 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 0 76px;
+    padding: 23px 0 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,7 +38,7 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: 0;
+      top: 22px;
       left: 0;
 
       display: block;
@@ -59,7 +59,7 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 15px;
     right: -25px;
 
     display: block;
@@ -69,6 +69,10 @@
     background-color: $basic-green;
 
     transform: translateX(100%);
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
 
     @media (min-width: $desktop-width) {
       right: -40px;
