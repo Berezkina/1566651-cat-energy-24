@@ -46,6 +46,7 @@
   @media (min-width: $tablet-width) {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 440px;
   }
@@ -64,8 +65,8 @@
 
       position: absolute;
       top: 0;
-      right: -9%;
-      left: -9%;
+      right: 0;
+      left: 0;
 
       height: 1px;
 
@@ -101,9 +102,9 @@
       content: "";
 
       position: absolute;
-      right: -9%;
+      right: 0;
       bottom: 0;
-      left: -9%;
+      left: 0;
 
       height: 1px;
 
@@ -124,7 +125,7 @@
   display: block;
   padding: 23px 0;
 
-  font-family: "OswaldMedium", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   font-style: normal;
@@ -137,7 +138,7 @@
     padding-top: 17px;
     padding-bottom: 10px;
 
-    font-family: "OswaldRegular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;

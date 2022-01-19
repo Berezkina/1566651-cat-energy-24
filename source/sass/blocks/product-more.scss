@@ -8,13 +8,13 @@
   padding: 25px 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 0 76px;
+    padding: 25px 0 76px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content, min-content;
+    grid-template-rows: min-content min-content;
     grid-gap: 0 80px;
     padding: 34px 0 86px;
   }
@@ -26,7 +26,7 @@
   width: fit-content;
   margin-bottom: 36px;
 
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -50,6 +50,7 @@
       transform: translateX(-100%);
 
       @media (min-width: $desktop-width) {
+        top: 23px;
         left: -40px;
       }
     }
@@ -72,10 +73,12 @@
 
     @media (min-width: $tablet-width) {
       top: 22px;
+      right: -36px;
     }
 
     @media (min-width: $desktop-width) {
-      right: -40px;
+      top: 23px;
+      right: -35px;
     }
   }
 
@@ -99,7 +102,7 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {

@@ -18,11 +18,11 @@
   cursor: pointer;
 }
 
-//.control-input {}
+//.control__input {}
 
-//.control-mark {}
+//.control__mark {}
 
-.control-input[type="checkbox"] + .control-mark {
+.control__input--checkbox + .control__mark {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@
   }
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control__input--checkbox:checked + .control__mark::before {
   content: "";
 
   position: absolute;
@@ -61,7 +61,7 @@
   }
 }
 
-.control-input[type="radio"] + .control-mark {
+.control__input--radio + .control__mark {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@
   }
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control__input--radio:checked + .control__mark::before {
   content: "";
 
   position: absolute;
@@ -104,13 +104,12 @@
   }
 }
 
-.control > .control-input[type="checkbox"]:disabled ~ span,
-.control > .control-input[type="radio"]:disabled ~ span {
+.control > .control__input:disabled ~ span {
   opacity: 0.3;
 }
 
-.control-label {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+.control__label {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -124,7 +123,6 @@
   }
 }
 
-.control-input[type="radio"]:focus-visible + .control-mark,
-.control-input[type="checkbox"]:focus-visible + .control-mark {
+.control__input:focus-visible + .control__mark {
   outline: 2px solid $basic-green-2;
 }

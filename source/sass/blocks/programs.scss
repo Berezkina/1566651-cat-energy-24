@@ -48,7 +48,7 @@
   margin-bottom: 32px;
   padding-left: 71px;
 
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -271,7 +271,7 @@
   padding: 4px 0;
   padding-right: 49px;
 
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -314,6 +314,11 @@
       top: 9px;
       right: -8px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 8px;
+      right: -11px;
+    }
   }
 
   &:hover {
@@ -342,6 +347,11 @@
     @media (min-width: $tablet-width) {
       top: 9px;
       right: -8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 8px;
+      right: -10px;
     }
   }
 

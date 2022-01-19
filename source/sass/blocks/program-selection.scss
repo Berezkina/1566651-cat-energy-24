@@ -36,7 +36,7 @@
 .program-selection__text {
   margin-bottom: 39px;
 
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -56,7 +56,7 @@
 
 .program-selection__fieldset {
   &--program {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 75px;
@@ -74,24 +74,24 @@
     margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
+      margin-bottom: 67px;
     }
   }
 
   &--comment {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 61px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 65px;
+      margin-bottom: 63px;
     }
   }
 
   &--optional {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
@@ -109,7 +109,7 @@
   list-style-type: none;
 
   &--cat-data {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 72px;
@@ -121,7 +121,7 @@
   }
 
   &--program {
-    padding: 22px 0 20px;
+    padding: 23px 0 20px;
 
     @media (max-width: $mobile-width-only) {
       position: relative;
@@ -178,7 +178,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 0 80px;
+      grid-gap: 20px 80px;
     }
   }
 }
@@ -225,7 +225,7 @@
 
   &--optional {
     min-height: 30px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
       min-height: 40px;
@@ -240,7 +240,7 @@
 
 .program-selection__label,
 .program-selection__input {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -281,30 +281,29 @@
   width: 100%;
   padding: 13px 15px;
 
-  border: 1px solid #e7e7e7;
+  border: none;
+  outline: 1px solid #e7e7e7;
   background-color: $basic-white;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
-  &:focus {
-    border: 2px solid #444444;
-    outline: none;
+  &:focus-visible {
+    outline: 2px solid #444444;
   }
 
   &--error {
-    border: 2px solid #ff8282;
-    outline: none;
+    outline: 2px solid #ff8282;
+  }
+
+  &--number {
+    appearance: textfield;
   }
 }
 
-input[type="number"] {
-  appearance: textfield;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.program-selection__input--number::-webkit-outer-spin-button,
+.program-selection__input--number::-webkit-inner-spin-button {
   margin: 0;
 
   appearance: none;
@@ -358,7 +357,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-.program-selection__input:focus + .program-selection__icon {
+.program-selection__input:focus-visible + .program-selection__icon {
   &--email {
     stroke: $basic-green;
   }
@@ -381,9 +380,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .program-selection__legend {
   position: relative;
 
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -447,6 +446,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .program-selection__fieldset--optional .program-selection__legend {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
   }
@@ -455,9 +456,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .program-selection__textarea {
   width: 100%;
   height: 150px;
-  padding: 9px 12px;
+  padding: 10px 13px;
 
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
